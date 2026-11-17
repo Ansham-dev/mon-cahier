@@ -146,6 +146,17 @@ body {
   animation: steam 2.6s ease-out infinite;
 }
 
+@keyframes drift {
+  from { transform: translateX(-15vw); }
+  to { transform: translateX(115vw); }
+}
+.cloud {
+  position: absolute;
+  left: 0;
+  animation: drift linear infinite;
+  will-change: transform;
+}
+
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-4px); }
